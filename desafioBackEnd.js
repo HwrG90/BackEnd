@@ -45,7 +45,7 @@ class Usuario {
   usuario.addMascota("Golden Retriever");
   usuario.addMascota("Beagle");
   
-  //Muestra la cantidad de mascostas que tiene el usuario y los nombes de las mascotas
+  //Muestra la cantidad de mascostas que tiene el usuario y los nombres de las mascotas
   
   console.log(usuario.countMascotas());
   console.log(usuario.mascotas);
