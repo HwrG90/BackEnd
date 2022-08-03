@@ -6,6 +6,7 @@ class Contenedor {
   }
 
   //Genera ID
+
   async generateId() {
     try {
       this.arr = await this.getAll();
@@ -22,7 +23,9 @@ class Contenedor {
       console.log(err);
     }
   }
+
   //Guarda un objeto
+
   async save(obj) {
     try {
       const readFile = await this.getAll();
@@ -49,6 +52,7 @@ class Contenedor {
   }
 
   //Devuelve el objeto con el ID buscado
+
   async getById(id) {
     try {
       this.arr = await this.getAll();
@@ -61,7 +65,9 @@ class Contenedor {
       console.log(err);
     }
   }
+
   //Devuelve un array con los objetos presentes en el archivo
+
   async getAll() {
     try {
       const arr = await fs.promises.readFile(this.fileName, "utf-8");
@@ -75,6 +81,7 @@ class Contenedor {
   }
 
   //Elimina del archivo el objeto con el ID buscado
+
   async deleteById(id) {
     try {
       this.arr = await this.getAll();
@@ -86,7 +93,9 @@ class Contenedor {
       console.log(err);
     }
   }
+  
   //Elimina todos los objetos guardados en el archivo
+
   async deleteAll() {
     try {
       this.arr = await this.getAll();
