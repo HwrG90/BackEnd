@@ -7,6 +7,8 @@ class Contenedor {
     this.content = [];
   }
 
+  // Genera ID
+
   async init() {
     try {
       let data = await fs.promises.readFile(this.fileName);
@@ -23,6 +25,8 @@ class Contenedor {
     await fs.promises.writeFile(this.fileName, JSON.stringify(this.content));
   }
 
+  // Guarda un objeto 
+
   save(object) {
     this.countID++;
     object["id"] = this.countID;
@@ -31,9 +35,13 @@ class Contenedor {
     return `El id del objeto añadido es ${this.countID}`;
   }
 
+//Devuelve objetos presentes en el archivo
+
   getAll() {
     return this.content;
   }
+
+//Devuelve el ID buscado
 
   getById(id) {
     let result;
@@ -48,6 +56,8 @@ class Contenedor {
     return result;
   }
 
+  //Elimina del archivo el objeto con el ID buscado
+
   async deleteById(id) {
     let result;
     if (this.content !== []) {
@@ -60,6 +70,8 @@ class Contenedor {
     }
     return result;
   }
+
+//Elimina todos los objetos guardados en el archivo
 
   deleteAll() {
     this.content = this.content.splice(0, this.content.length);
