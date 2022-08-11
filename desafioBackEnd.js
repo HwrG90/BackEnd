@@ -34,8 +34,7 @@ app.get("/productos", (req, res) => {
   res.send(products.getAll());
 });
 
-
-// Devuelve un producto aleatorio  
+// Devuelve un producto aleatorio
 
 app.get("/productosRandom", (req, res) => {
   res.send(

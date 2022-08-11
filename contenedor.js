@@ -25,7 +25,7 @@ class Contenedor {
     await fs.promises.writeFile(this.fileName, JSON.stringify(this.content));
   }
 
-  // Guarda un objeto 
+  // Guarda un objeto
 
   save(object) {
     this.countID++;
@@ -35,13 +35,13 @@ class Contenedor {
     return `El id del objeto añadido es ${this.countID}`;
   }
 
-//Devuelve objetos presentes en el archivo
+  //Devuelve objetos presentes en el archivo
 
   getAll() {
     return this.content;
   }
 
-//Devuelve el ID buscado
+  //Devuelve el ID buscado
 
   getById(id) {
     let result;
@@ -71,7 +71,7 @@ class Contenedor {
     return result;
   }
 
-//Elimina todos los objetos guardados en el archivo
+  //Elimina todos los objetos guardados en el archivo
 
   deleteAll() {
     this.content = this.content.splice(0, this.content.length);
