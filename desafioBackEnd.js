@@ -26,8 +26,9 @@ app.get("/", (req, res) => {
   '>Express funcionando correctamente</h1>`);
 });
 
-app.get("/productos", (req, res) => {
-  res.send(products.getAll());
+app.get("/productos", async (req, res) => {
+  let pro = await products.getAll();
+  res.send(products.getAll(pro));
 });
 
 app.get("/productosRandom", (req, res) => {
