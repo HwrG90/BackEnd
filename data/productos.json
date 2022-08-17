@@ -20,13 +20,13 @@
   {
     "title": "Regla",
     "price": 88,
-    "thumbnail": "https://www.iconfinder.com/icons/8008233/waterpass_ruler_rulers_scale_measure_geometry_weight_icon",
+    "thumbnail": "https://cdn2.iconfinder.com/data/icons/tools-flat-v-1-free/129/waterpass_ruler-512.png",
     "id": 4
   },
   {
     "title": "Papel",
     "price": 12,
-    "thumbnail": "https://www.iconfinder.com/icons/3601065/document_paper_report_icon",
+    "thumbnail": "https://cdn1.iconfinder.com/data/icons/document-edit-line/64/Document-doc-file-paper-report-bundle-sheaf-512.png",
     "id": 5
   }
 ]
