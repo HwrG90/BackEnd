@@ -20,7 +20,6 @@ class Contenedor {
     }
   }
 
-
   //Método que escribe/sobrescribe
 
   async write() {
@@ -28,20 +27,18 @@ class Contenedor {
   }
 
   save(object) {
-    this.countID++; 
-    object["id"] = this.countID; 
-    this.content.push(object); 
-    this.write(); 
-    return `El id del objeto añadido es ${this.countID}.`; 
+    this.countID++;
+    object["id"] = this.countID;
+    this.content.push(object);
+    this.write();
+    return `El id del objeto añadido es ${this.countID}.`;
   }
-
 
   //Devuelve un array con los objetos presentes en el archivo
 
   getAll() {
     return this.content;
   }
-
 
   //Recibe un id y devuelve el objeto con ese id, o null si no está.
 
@@ -65,7 +62,7 @@ class Contenedor {
     if (this.content !== []) {
       let newContent = this.content.filter((x) => x.id !== id);
       this.content = newContent;
-      this.write(); 
+      this.write();
       result = `El producto fue eliminado`;
     } else {
       result = `El archivo está vacío`;
@@ -76,7 +73,6 @@ class Contenedor {
   //Elimina todos los objetos presentes en el archivo.
 
   async deleteAll() {
-
     this.content = await this.content.splice(0, this.content.length);
     this.write();
   }

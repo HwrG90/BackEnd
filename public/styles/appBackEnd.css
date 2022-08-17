@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* conversion a 10px */
+html {
+  font-size: 62.5;
+  scroll-behavior: smooth;
+}
+h1 {
+  background-color: dimgray;
+  color: white;
+  text-align: center;
+  box-shadow: 0px 0px 10px black;
+  font-family: "Silkscreen", cursive;
+  margin-bottom: 2rem;
+}
+form {
+  font-family: "Silkscreen", cursive;
+  margin-left: 2rem;
+}
+button {
+  background-color: dimgray;
+  color: white;
+  text-align: center;
+  box-shadow: 0px 0px 10px black;
+  font-family: "Silkscreen", cursive;
+}

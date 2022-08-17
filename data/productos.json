@@ -1,26 +1,32 @@
-  [
-    {
-      "title": "Pulsera",
-      "price": 150,
-      "thumbnail": "shorturl.at/bqDZ3",
-      "id": 1
-    },
-    {
-      "title": "Collar",
-      "price": 100,
-      "thumbnail": "shorturl.at/hlEYZ",
-      "id": 2
-    },
-    {
-      "title": "iPhone",
-      "price": 1200,
-      "thumbnail": "shorturl.at/dpqH6",
-      "id": 3
-    },
-    {
-      "title": "Vaso",
-      "price": "790",
-      "thumbnail": "https://cutt.ly/DYe4KCH",
-      "id": 4
-    }
-  ]
+[
+  {
+    "title": "Escuadra",
+    "price": 123,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/ruler-triangle-stationary-school-256.png",
+    "id": 1
+  },
+  {
+    "title": "Calculadora",
+    "price": 234,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/calculator-math-tool-school-256.png",
+    "id": 2
+  },
+  {
+    "title": "Globo Terráqueo",
+    "price": 345,
+    "thumbnail": "https://cdn3.iconfinder.com/data/icons/education-209/64/globe-earth-geograhy-planet-school-256.png",
+    "id": 3
+  },
+  {
+    "title": "Regla",
+    "price": 88,
+    "thumbnail": "https://www.iconfinder.com/icons/8008233/waterpass_ruler_rulers_scale_measure_geometry_weight_icon",
+    "id": 4
+  },
+  {
+    "title": "Papel",
+    "price": 12,
+    "thumbnail": "https://www.iconfinder.com/icons/3601065/document_paper_report_icon",
+    "id": 5
+  }
+]

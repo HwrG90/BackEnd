@@ -5,22 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BackEnd</title>
+    <link rel="stylesheet" type="text/css" href="styles/appBackEnd.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-      <style>
-        h1 {
-          background-color: dimgray;
-          color: white;
-          text-align: center;
-          box-shadow: 0px 0px 10px black;
-        }
-        button {
-          background-color: dimgray;
-          color: white;
-          text-align: center;
-          box-shadow: 0px 0px 10px black;
-        }
-      </style>
     <h1>Carga de productos</h1>
 
     <form action="/api/productos" method="post">
@@ -32,20 +25,3 @@
     </form>
   </body>
 </html>
-
-<!-- <h1 style="background-color: black; color: white; text-align: center">
-  Carga de productos
-</h1>
-
-<form action="/api/productos" method="post">
-  Title: <input type="text" name="title" /><br /><br />
-  Price: <input type="number" name="price" /><br /><br />
-  Thumbnail: <input type="text" name="thumbnail" /><br /><br />
-
-  <button
-    type="submit"
-    style="background-color: black; color: white; text-align: center"
-  >
-    Agregar producto
-  </button>
-</form> -->
