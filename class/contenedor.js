@@ -5,9 +5,8 @@ class Contenedor {
     this.fileName = name;
     this.countID = 0;
     this.content = [];
+    this.init();
   }
-
-  // Genera ID
 
   async init() {
     try {
@@ -17,31 +16,34 @@ class Contenedor {
         if (element.id > this.countID) this.countID = element.id;
       }
     } catch (error) {
-      console.log(error);
+      console.log("Aún no hay archivo");
     }
   }
+
+
+  //Método que escribe/sobrescribe
 
   async write() {
     await fs.promises.writeFile(this.fileName, JSON.stringify(this.content));
   }
 
-  // Guarda un objeto
-
   save(object) {
-    this.countID++;
-    object["id"] = this.countID;
-    this.content.push(object);
-    this.write();
-    return `El id del objeto añadido es ${this.countID}`;
+    this.countID++; 
+    object["id"] = this.countID; 
+    this.content.push(object); 
+    this.write(); 
+    return `El id del objeto añadido es ${this.countID}.`; 
   }
 
-  //Devuelve objetos presentes en el archivo
+
+  //Devuelve un array con los objetos presentes en el archivo
 
   getAll() {
     return this.content;
   }
 
-  //Devuelve el ID buscado
+
+  //Recibe un id y devuelve el objeto con ese id, o null si no está.
 
   getById(id) {
     let result;
@@ -56,26 +58,34 @@ class Contenedor {
     return result;
   }
 
-  //Elimina del archivo el objeto con el ID buscado
+  //Elimina del archivo el objeto con el id buscado
 
-  async deleteById(id) {
+  deleteById(id) {
     let result;
     if (this.content !== []) {
       let newContent = this.content.filter((x) => x.id !== id);
       this.content = newContent;
-      this.write();
-      result = "OK";
+      this.write(); 
+      result = `El producto fue eliminado`;
     } else {
       result = `El archivo está vacío`;
     }
     return result;
   }
 
-  //Elimina todos los objetos guardados en el archivo
+  //Elimina todos los objetos presentes en el archivo.
 
-  deleteAll() {
-    this.content = this.content.splice(0, this.content.length);
+  async deleteAll() {
+
+    this.content = await this.content.splice(0, this.content.length);
     this.write();
+  }
+
+  update(id, obj) {
+    const index = this.content.findIndex((objT) => objT.id == id);
+    obj.id = this[index].id;
+    this.content[index] = obj;
+    return obj;
   }
 }
 
