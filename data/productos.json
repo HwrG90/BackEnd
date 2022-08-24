@@ -28,5 +28,35 @@
     "price": 12,
     "thumbnail": "https://cdn1.iconfinder.com/data/icons/document-edit-line/64/Document-doc-file-paper-report-bundle-sheaf-512.png",
     "id": 5
+  },
+  {
+    "title": "Clips",
+    "price": 32,
+    "thumbnail": "https://cdn1.iconfinder.com/data/icons/ui-set-6/100/Attachment-512.png",
+    "id": 6
+  },
+  {
+    "title": "Pencil",
+    "price": 12,
+    "thumbnail": "https://cdn2.iconfinder.com/data/icons/basic-flat-icon-set/128/pencil-512.png",
+    "id": 7
+  },
+  {
+    "title": "Pen",
+    "price": 26,
+    "thumbnail": "https://cdn2.iconfinder.com/data/icons/woothemes/PNG/pen_ballpoint.png",
+    "id": 8
+  },
+  {
+    "title": "Fichero",
+    "price": "60",
+    "thumbnail": "https://cdn1.iconfinder.com/data/icons/business-and-finance-127/200/files-512.png",
+    "id": 9
+  },
+  {
+    "title": "Goma",
+    "price": "10",
+    "thumbnail": "https://cdn1.iconfinder.com/data/icons/office-icons-17/512/ilustracoes_04-08-512.png",
+    "id": 10
   }
 ]
