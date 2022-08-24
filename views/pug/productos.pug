@@ -14,10 +14,12 @@ html(lang='es')
         |       
         li.nav-item
           a.nav-link(href='/productos') Productos
-
+        br
     h2.text-danger.mt-4 Productos cargados
     if content.length == 0
+        br
         h5.alert-danger.rounded.p-2 No hay productos cargados
+        br
     else     
         table.table
             thead

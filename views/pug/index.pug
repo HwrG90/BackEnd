@@ -14,9 +14,11 @@ html(lang='es')
           |       
           li.nav-item
             a.nav-link(href='/productos') Productos
+        br
     h2.text-primary.mt-2 Ingrese datos
     form(action='/productos', method='post')
       .mb-3
+        br
         label.form-label(for='title') Titulo
         input.form-control(type='text', name='title')
       .mb-3
