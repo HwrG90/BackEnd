@@ -49,13 +49,13 @@
   },
   {
     "title": "Fichero",
-    "price": "60",
+    "price": 60,
     "thumbnail": "https://cdn1.iconfinder.com/data/icons/business-and-finance-127/200/files-512.png",
     "id": 9
   },
   {
     "title": "Goma",
-    "price": "10",
+    "price": 10,
     "thumbnail": "https://cdn1.iconfinder.com/data/icons/office-icons-17/512/ilustracoes_04-08-512.png",
     "id": 10
   }
