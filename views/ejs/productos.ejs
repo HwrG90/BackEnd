@@ -3,12 +3,12 @@
   <%- include('head');%>
   <body class="container bg-light">
     <%- include('navbar');%>
-    <br>
+    <br />
     <h2 class="text-danger mt-4">Productos cargados</h2>
     <% if (content.length == 0) { %>
     <h5 class="alert-danger rounded p-2">No se encontraron datos</h5>
     <% } else { %>
-      <br>
+    <br />
     <table class="table">
       <thead>
         <tr>
@@ -25,7 +25,8 @@
           <td><%= producto.title %></td>
           <td><%= producto.price %></td>
           <td>
-            <img width="30px" src=<%= producto.thumbnail %> alt="Img-Productos">
+            <img width="30px" src="<%" ="producto.thumbnail" % />
+            alt="Img-Productos">
           </td>
         </tr>
         <% }); %>

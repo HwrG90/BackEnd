@@ -27,7 +27,7 @@ form {
   font-size: 1rem;
 }
 
-input{
+input {
   color: black;
   padding: 10px 20px;
   border-radius: 50px;
@@ -46,7 +46,6 @@ button {
   font-family: "Silkscreen", cursive;
 }
 
-button:active{
-  box-shadow: inset 2px 2px 12px #ccc,
-  inset -4px -4px   12px #fff ;
+button:active {
+  box-shadow: inset 2px 2px 12px #ccc, inset -4px -4px 12px #fff;
 }
