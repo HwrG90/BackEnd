@@ -15,7 +15,7 @@
           <th scope="col">#</th>
           <th scope="col">Título</th>
           <th scope="col">Precio</th>
-          <th scope="col">URL imagen</th>
+          <th scope="col">Imagen</th>
         </tr>
       </thead>
       <tbody>
@@ -24,7 +24,9 @@
           <th scope="row"><%= producto.id %></th>
           <td><%= producto.title %></td>
           <td><%= producto.price %></td>
-          <td><%= producto.thumbnail %></td>
+          <td>
+            <img width="30px" src=<%= producto.thumbnail %> alt="Img-Productos">
+          </td>
         </tr>
         <% }); %>
       </tbody>
