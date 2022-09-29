@@ -1,5 +1,5 @@
-const { queryProductos } = require(`../../config/firebase`);
-const CrudFirebase = require(`../../lib/Firebase/productosFirebase`);
+const { queryProductos } = require(`../../config/firebase.js`);
+const CrudFirebase = require(`../../lib/Firebase/productosFirebase.js`);
 
 class ProductosDAOFirebase extends CrudFirebase {
     constructor() {
