@@ -1,0 +1,39 @@
+{
+    "name": "desafio-back-end",
+    "version": "1.0.0",
+    "description": "Desafio BackEnd",
+    "main": "index.js",
+    "scripts": {
+        "dev": "nodemon index.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/HwrG90/BackEnd.git"
+    },
+    "keywords": [
+        "BackEnd"
+    ],
+    "author": "Hernan Gomez",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/HwrG90/BackEnd/issues"
+    },
+    "homepage": "https://github.com/HwrG90/BackEnd#readme",
+    "dependencies": {
+        "express": "^4.18.1",
+        "express-handlebars": "^6.0.6",
+        "firebase-admin": "^11.0.1",
+        "jquery": "^3.6.1",
+        "knex": "^1.0.1",
+        "mongoose": "^6.6.2",
+        "mysql": "^2.18.1",
+        "socket.io": "^4.5.1",
+        "uuid": "^9.0.0"
+    },
+    "devDependencies": {
+        "moment": "^2.29.4",
+        "morgan": "^1.10.0",
+        "nodemon": "^2.0.19"
+    }
+}
