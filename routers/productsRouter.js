@@ -1,8 +1,10 @@
 const server = require("express").Router();
-const path = require('path')
+const path = require("path");
 const Contenedor = require("../class/contenedor");
 
-const productos = new Contenedor(path.join(__dirname, '../data/productos.json'));
+const productos = new Contenedor(
+  path.join(__dirname, "../data/productos.json")
+);
 
 server.get("/", (req, res) => {
   if (req.session.user) {

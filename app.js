@@ -63,7 +63,7 @@ io.on("connection", async (socket) => {
   socket.emit("messages", messagesToEmit);
 
   socket.on("new-message", (data) => {
-    data.id = messages.length+1
+    data.id = messages.length + 1;
     messages.push(data);
 
     io.sockets.emit("messages", [data]);

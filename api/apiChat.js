@@ -23,8 +23,11 @@ class ApiChat {
       const messageList = JSON.parse(message);
 
       //Denormalizamos la fuente
-      const messagesDenormalized = normalizeAndDenormalize("denormalize", messageList);
-      
+      const messagesDenormalized = normalizeAndDenormalize(
+        "denormalize",
+        messageList
+      );
+
       return messagesDenormalized;
     } catch (err) {
       console.log("no se pudo leer el archivo " + err);

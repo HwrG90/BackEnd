@@ -30,10 +30,10 @@ $("#myChat").on("submit", (e) => {
       avatar: $("#avatar").val(),
     },
     text: $("#text").val(),
-    time: time
+    time: time,
   };
-  
+
   socket.emit("new-message", message);
-  $("#text").val("")
-  return false
+  $("#text").val("");
+  return false;
 });

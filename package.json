@@ -1,45 +1,45 @@
 {
-    "name": "desafio-back-end",
-    "version": "1.0.0",
-    "description": "Desafio BackEnd",
-    "main": "index.js",
-    "scripts": {
-        "dev": "nodemon index.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/HwrG90/BackEnd.git"
-    },
-    "keywords": [
-        "BackEnd"
-    ],
-    "author": "Hernan Gomez",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/HwrG90/BackEnd/issues"
-    },
-    "homepage": "https://github.com/HwrG90/BackEnd#readme",
-    "dependencies": {
-        "connect-mongo": "^4.6.0",
-        "dotenv": "^16.0.0",
-        "express": "^4.18.1",
-        "express-handlebars": "^6.0.6",
-        "express-session": "^1.17.3",
-        "faker": "^5.0.0",
-        "firebase-admin": "^11.0.1",
-        "jquery": "^3.6.1",
-        "knex": "^1.0.1",
-        "mongoose": "^6.6.2",
-        "mysql": "^2.18.1",
-        "normalizr": "^3.6.2",
-        "session-file-store": "^1.5.0",
-        "socket.io": "^4.5.1",
-        "uuid": "^9.0.0"
-    },
-    "devDependencies": {
-        "moment": "^2.29.4",
-        "morgan": "^1.10.0",
-        "nodemon": "^2.0.19"
-    }
+  "name": "desafio-back-end",
+  "version": "1.0.0",
+  "description": "Desafio BackEnd",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HwrG90/BackEnd.git"
+  },
+  "keywords": [
+    "BackEnd"
+  ],
+  "author": "Hernan Gomez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HwrG90/BackEnd/issues"
+  },
+  "homepage": "https://github.com/HwrG90/BackEnd#readme",
+  "dependencies": {
+    "connect-mongo": "^4.6.0",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6",
+    "express-session": "^1.17.3",
+    "faker": "^5.0.0",
+    "firebase-admin": "^11.0.1",
+    "jquery": "^3.6.1",
+    "knex": "^1.0.1",
+    "mongoose": "^6.6.2",
+    "mysql": "^2.18.1",
+    "normalizr": "^3.6.2",
+    "session-file-store": "^1.5.0",
+    "socket.io": "^4.5.1",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "moment": "^2.29.4",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.19"
+  }
 }
