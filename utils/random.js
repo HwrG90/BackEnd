@@ -1,13 +1,15 @@
-const random = (repeat) => {
-    let object = {};
-    console.log(repeat);
-    for (let i = 0; i < repeat; i++) {
-      let number = Math.floor(Math.random() * 999) + 1;
-      if (object[number]) {
-        object[number]++;
-      } else {
-        object[number] = 1;
-      }
+  function generateRandomNumbers(n) {
+    const randomNumbers = [];
+    
+    for (let i = 0; i < n; i++) {
+        randomNumbers.push(
+            Math.floor(Math.random() * 1000)
+        )
     }
-    return console.log(object);
-  };
+    return randomNumbers;
+}
+
+process.on('message', (num) => {
+    const numbers = generateRandomNumbers(num);
+    process.send(numbers);
+})

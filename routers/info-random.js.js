@@ -21,21 +21,18 @@ server.get("/info", (req, res) => {
 });
 
 //Randoms
-server.get("/randoms", (req, res) => {
-  const num = req.query.cant || 100;
-  const randoms = fork('./utils/random.js', [num]);
-  
-  randoms.send("start");
 
-  randoms.on("error", (err) => {
-    console.log(`Error en child process 'random' ${err}`);
-  });
+const randomNumbersGeneratorFork = fork('./utils/random.js')
 
-  randoms.on("message", (obj) => {
-    return res.json(obj);
-  });
-});
+server.get('/randoms', (req, res) => {
 
+    const cant = req.query.cant || 1000 ;
 
+    randomNumbersGeneratorFork.on('message', (resultado) => {
+        res.status(200).json(resultado);
+    })
+    randomNumbersGeneratorFork.send(cant);
+
+})
 
 module.exports = server;

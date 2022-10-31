@@ -5,7 +5,7 @@ const productsRouter = require('./productsRouter')
 const chatRouter = require('./chatRouter') //lo manejo desde app.js porque me da error
 const fakerRouter = require('./fakerRouter')
 const sessionRouter = require('./sessionRouter')
-const desafio11Router = require('./desafio11Router')
+const desafio11Router = require('./info-random.js')
 
 router.use('/productos', productsRouter)
 router.use('/chat', chatRouter)
