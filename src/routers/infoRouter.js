@@ -1,5 +1,3 @@
-const { fork } = require("child_process");
-
 const server = require("express").Router();
 
 server.get("/info", (req, res) => {
@@ -17,22 +15,6 @@ server.get("/info", (req, res) => {
   <li>Memoria total reservada: ${`${Math.round(
     process.memoryUsage().rss / 1024
   )} KB`}</li>
+  <li>N° Procesadores ${require('os').cpus().length}</li>
 </ul>`);
 });
-
-//Randoms
-
-const randomNumbersGeneratorFork = fork('./utils/random.js')
-
-server.get('/randoms', (req, res) => {
-
-    const cant = req.query.cant || 1000 ;
-
-    randomNumbersGeneratorFork.on('message', (resultado) => {
-        res.status(200).json(resultado);
-    })
-    randomNumbersGeneratorFork.send(cant);
-
-})
-
-module.exports = server;
