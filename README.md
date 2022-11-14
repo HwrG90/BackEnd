@@ -8,7 +8,7 @@
 
 # Conclusión 
 
-```[color blue]
+```fix
 Benchmark con console Log
 
 $ npm run test
