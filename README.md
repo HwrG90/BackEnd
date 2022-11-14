@@ -9,8 +9,6 @@
 # Conclusión 
 
 ```ini
-[blue text]
-
 Benchmark con console Log
 
 $ npm run test
