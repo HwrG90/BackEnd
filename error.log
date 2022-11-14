@@ -1,0 +1,1166 @@
+[2022-11-13T11:33:03.253] [ERROR] errorArchive - TypeError: ProductosModel.findAll is not a function
+    at ProductoDao.getAll (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\dao\ProductoDao.js:18:41)
+    at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\routes\producto.js:9:40
+    at Layer.handle [as handle_request] (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\express\lib\router\index.js:175:3)
+[2022-11-13T11:35:04.364] [ERROR] errorArchive - MongooseError: Operation `productos.insertOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:151:23)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+[2022-11-13T11:36:25.190] [ERROR] errorArchive - MongooseError: Operation `productos.insertOne()` buffering timed out after 10000ms
+    at Timeout.<anonymous> (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\drivers\node-mongodb-native\collection.js:151:23)
+    at listOnTimeout (node:internal/timers:559:17)
+    at processTimers (node:internal/timers:502:7)
+[2022-11-13T11:40:00.751] [ERROR] errorArchive - Error: Productos validation failed: stock: Path `stock` is required., precio: Path `precio` is required., thumbnail: Path `thumbnail` is required., codigo: Path `codigo` is required., descripcion: Path `descripcion` is required., nombre: Path `nombre` is required.
+    at ValidationError.inspect (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    stock: ValidatorError: Path `stock` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'stock',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    precio: ValidatorError: Path `precio` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'precio',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    thumbnail: ValidatorError: Path `thumbnail` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'thumbnail',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    codigo: ValidatorError: Path `codigo` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'codigo',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    descripcion: ValidatorError: Path `descripcion` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'descripcion',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    nombre: ValidatorError: Path `nombre` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'nombre',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Productos validation failed'
+}
+[2022-11-13T11:41:08.359] [ERROR] errorArchive - Error: Productos validation failed: stock: Path `stock` is required., precio: Path `precio` is required., thumbnail: Path `thumbnail` is required., codigo: Path `codigo` is required., descripcion: Path `descripcion` is required., nombre: Path `nombre` is required.
+    at ValidationError.inspect (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    stock: ValidatorError: Path `stock` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'stock',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    precio: ValidatorError: Path `precio` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'precio',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    thumbnail: ValidatorError: Path `thumbnail` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'thumbnail',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    codigo: ValidatorError: Path `codigo` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'codigo',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    descripcion: ValidatorError: Path `descripcion` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'descripcion',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    nombre: ValidatorError: Path `nombre` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'nombre',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Productos validation failed'
+}
+[2022-11-13T11:45:18.103] [ERROR] errorArchive - TypeError: Productos.findAll is not a function
+    at ProductoDao.getAll (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\dao\ProductoDao.js:18:36)
+    at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\routes\producto.js:9:40
+    at Layer.handle [as handle_request] (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\express\lib\router\index.js:175:3)
+[2022-11-13T11:45:21.198] [ERROR] errorArchive - Error: Productos validation failed: stock: Path `stock` is required., precio: Path `precio` is required., thumbnail: Path `thumbnail` is required., codigo: Path `codigo` is required., descripcion: Path `descripcion` is required., nombre: Path `nombre` is required.
+    at ValidationError.inspect (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    stock: ValidatorError: Path `stock` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'stock',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    precio: ValidatorError: Path `precio` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'precio',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    thumbnail: ValidatorError: Path `thumbnail` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'thumbnail',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    codigo: ValidatorError: Path `codigo` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'codigo',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    descripcion: ValidatorError: Path `descripcion` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'descripcion',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    nombre: ValidatorError: Path `nombre` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'nombre',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Productos validation failed'
+}
+[2022-11-13T11:45:41.376] [ERROR] errorArchive - Error: Productos validation failed: stock: Path `stock` is required., precio: Path `precio` is required., thumbnail: Path `thumbnail` is required., codigo: Path `codigo` is required., descripcion: Path `descripcion` is required., nombre: Path `nombre` is required.
+    at ValidationError.inspect (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    stock: ValidatorError: Path `stock` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'stock',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    precio: ValidatorError: Path `precio` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'precio',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    thumbnail: ValidatorError: Path `thumbnail` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'thumbnail',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    codigo: ValidatorError: Path `codigo` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'codigo',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    descripcion: ValidatorError: Path `descripcion` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'descripcion',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    nombre: ValidatorError: Path `nombre` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'nombre',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Productos validation failed'
+}
+[2022-11-13T12:05:28.628] [ERROR] errorArchive - Error: Carritos validation failed: timestamp: Path `timestamp` is required.
+    at ValidationError.inspect (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    timestamp: ValidatorError: Path `timestamp` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaDate.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'timestamp',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Carritos validation failed'
+}
+[2022-11-13T12:05:37.196] [ERROR] errorArchive - Error: Carritos validation failed: timestamp: Path `timestamp` is required.
+    at ValidationError.inspect (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    timestamp: ValidatorError: Path `timestamp` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaDate.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'timestamp',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Carritos validation failed'
+}
+[2022-11-13T12:05:49.148] [ERROR] errorArchive - Error: Carritos validation failed: timestamp: Path `timestamp` is required.
+    at ValidationError.inspect (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    timestamp: ValidatorError: Path `timestamp` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaDate.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'timestamp',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Carritos validation failed'
+}
+[2022-11-13T12:06:12.005] [ERROR] errorArchive - TypeError: ProductosModel.findAll is not a function
+    at ProductoDao.getAll (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\dao\ProductoDao.js:18:41)
+    at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\routes\producto.js:9:40
+    at Layer.handle [as handle_request] (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\express\lib\router\route.js:144:13)
+    at Route.dispatch (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\express\lib\router\route.js:114:3)
+    at Layer.handle [as handle_request] (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\express\lib\router\index.js:280:10)
+    at Function.handle (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\express\lib\router\index.js:175:3)
+[2022-11-13T12:06:18.031] [ERROR] errorArchive - Error: Productos validation failed: stock: Path `stock` is required., precio: Path `precio` is required., thumbnail: Path `thumbnail` is required., codigo: Path `codigo` is required., descripcion: Path `descripcion` is required., nombre: Path `nombre` is required.
+    at ValidationError.inspect (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    stock: ValidatorError: Path `stock` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'stock',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    precio: ValidatorError: Path `precio` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'precio',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    thumbnail: ValidatorError: Path `thumbnail` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'thumbnail',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    codigo: ValidatorError: Path `codigo` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'codigo',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    descripcion: ValidatorError: Path `descripcion` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'descripcion',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    nombre: ValidatorError: Path `nombre` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'nombre',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Productos validation failed'
+}
+[2022-11-13T12:06:27.852] [ERROR] errorArchive - Error: Productos validation failed: stock: Path `stock` is required., precio: Path `precio` is required., thumbnail: Path `thumbnail` is required., codigo: Path `codigo` is required., descripcion: Path `descripcion` is required., nombre: Path `nombre` is required.
+    at ValidationError.inspect (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    stock: ValidatorError: Path `stock` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'stock',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    precio: ValidatorError: Path `precio` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'precio',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    thumbnail: ValidatorError: Path `thumbnail` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'thumbnail',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    codigo: ValidatorError: Path `codigo` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'codigo',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    descripcion: ValidatorError: Path `descripcion` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'descripcion',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    nombre: ValidatorError: Path `nombre` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'nombre',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Productos validation failed'
+}
+[2022-11-13T12:06:36.074] [ERROR] errorArchive - Error: Productos validation failed: stock: Path `stock` is required., precio: Path `precio` is required., thumbnail: Path `thumbnail` is required., codigo: Path `codigo` is required., descripcion: Path `descripcion` is required., nombre: Path `nombre` is required.
+    at ValidationError.inspect (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    stock: ValidatorError: Path `stock` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'stock',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    precio: ValidatorError: Path `precio` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'precio',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    thumbnail: ValidatorError: Path `thumbnail` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'thumbnail',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    codigo: ValidatorError: Path `codigo` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'codigo',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    descripcion: ValidatorError: Path `descripcion` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'descripcion',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    nombre: ValidatorError: Path `nombre` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'nombre',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Productos validation failed'
+}
+[2022-11-13T12:06:49.814] [ERROR] errorArchive - Error: Productos validation failed: stock: Path `stock` is required., precio: Path `precio` is required., thumbnail: Path `thumbnail` is required., codigo: Path `codigo` is required., descripcion: Path `descripcion` is required., nombre: Path `nombre` is required.
+    at ValidationError.inspect (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    stock: ValidatorError: Path `stock` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'stock',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    precio: ValidatorError: Path `precio` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'precio',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    thumbnail: ValidatorError: Path `thumbnail` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'thumbnail',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    codigo: ValidatorError: Path `codigo` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'codigo',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    descripcion: ValidatorError: Path `descripcion` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'descripcion',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    nombre: ValidatorError: Path `nombre` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'nombre',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Productos validation failed'
+}
+[2022-11-13T12:06:50.450] [ERROR] errorArchive - Error: Productos validation failed: stock: Path `stock` is required., precio: Path `precio` is required., thumbnail: Path `thumbnail` is required., codigo: Path `codigo` is required., descripcion: Path `descripcion` is required., nombre: Path `nombre` is required.
+    at ValidationError.inspect (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    stock: ValidatorError: Path `stock` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'stock',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    precio: ValidatorError: Path `precio` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'precio',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    thumbnail: ValidatorError: Path `thumbnail` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'thumbnail',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    codigo: ValidatorError: Path `codigo` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'codigo',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    descripcion: ValidatorError: Path `descripcion` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'descripcion',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    nombre: ValidatorError: Path `nombre` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'nombre',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Productos validation failed'
+}
+[2022-11-13T12:06:50.999] [ERROR] errorArchive - Error: Productos validation failed: stock: Path `stock` is required., precio: Path `precio` is required., thumbnail: Path `thumbnail` is required., codigo: Path `codigo` is required., descripcion: Path `descripcion` is required., nombre: Path `nombre` is required.
+    at ValidationError.inspect (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    stock: ValidatorError: Path `stock` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'stock',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    precio: ValidatorError: Path `precio` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'precio',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    thumbnail: ValidatorError: Path `thumbnail` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'thumbnail',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    codigo: ValidatorError: Path `codigo` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'codigo',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    descripcion: ValidatorError: Path `descripcion` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'descripcion',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    nombre: ValidatorError: Path `nombre` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'nombre',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Productos validation failed'
+}
+[2022-11-13T12:06:51.421] [ERROR] errorArchive - Error: Productos validation failed: stock: Path `stock` is required., precio: Path `precio` is required., thumbnail: Path `thumbnail` is required., codigo: Path `codigo` is required., descripcion: Path `descripcion` is required., nombre: Path `nombre` is required.
+    at ValidationError.inspect (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    stock: ValidatorError: Path `stock` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'stock',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    precio: ValidatorError: Path `precio` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'precio',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    thumbnail: ValidatorError: Path `thumbnail` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'thumbnail',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    codigo: ValidatorError: Path `codigo` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'codigo',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    descripcion: ValidatorError: Path `descripcion` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'descripcion',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    nombre: ValidatorError: Path `nombre` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'nombre',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Productos validation failed'
+}
+[2022-11-13T12:11:21.927] [ERROR] errorArchive - Error: Productos validation failed: stock: Path `stock` is required., precio: Path `precio` is required., thumbnail: Path `thumbnail` is required., codigo: Path `codigo` is required., descripcion: Path `descripcion` is required., nombre: Path `nombre` is required.
+    at ValidationError.inspect (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\error\validation.js:48:26)
+    at formatValue (node:internal/util/inspect:782:19)
+    at inspect (node:internal/util/inspect:347:10)
+    at formatWithOptionsInternal (node:internal/util/inspect:2167:40)
+    at Object.format (node:internal/util/inspect:2021:10)
+    at basicLayout (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\layouts.js:65:52)
+    at app (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\appenders\file.js:98:23)
+    at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:43:5
+    at Array.forEach (<anonymous>)
+    at sendLogEventToAppender (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\log4js\lib\log4js.js:42:21) {
+  errors: {
+    stock: ValidatorError: Path `stock` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'stock',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    precio: ValidatorError: Path `precio` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'precio',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    thumbnail: ValidatorError: Path `thumbnail` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'thumbnail',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    codigo: ValidatorError: Path `codigo` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaNumber.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'codigo',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    descripcion: ValidatorError: Path `descripcion` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'descripcion',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    },
+    nombre: ValidatorError: Path `nombre` is required.
+        at validate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1337:13)
+        at SchemaString.SchemaType.doValidate (C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\schematype.js:1321:7)
+        at C:\Users\jerso\OneDrive\Escritorio\BackEnd\Desafio 15\node_modules\mongoose\lib\document.js:2831:18
+        at processTicksAndRejections (node:internal/process/task_queues:78:11) {
+      properties: [Object],
+      kind: 'required',
+      path: 'nombre',
+      value: undefined,
+      reason: undefined,
+      [Symbol(mongoose:validatorError)]: true
+    }
+  },
+  _message: 'Productos validation failed'
+}
