@@ -8,7 +8,7 @@
 
 # Conclusión 
 
-```ini
+```hs
 Benchmark con console Log
 
 $ npm run test
