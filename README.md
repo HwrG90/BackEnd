@@ -9,6 +9,7 @@
 # Conclusión 
 
 ```sh
+[blue text]
 
 Benchmark con console Log
 
