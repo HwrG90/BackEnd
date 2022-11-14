@@ -8,7 +8,7 @@
 
 # Conclusión 
 
-```sh
+```ini
 [blue text]
 
 Benchmark con console Log
