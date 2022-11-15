@@ -36,7 +36,7 @@ Req/Bytes counts sampled once per second.
 
 ```
 
-El resultado de Artillery nos indica (ver archivo para resultados completos)
+- El resultado de Artillery nos indica (ver archivo para resultados completos)
 
 ```sh
 
@@ -49,7 +49,7 @@ http.response_time:
 
   ```
 
-Sin console log
+- Sin console log
 
 ```
 
@@ -82,7 +82,7 @@ Req/Bytes counts sampled once per second.
 
 ```
 
-El resultado de Artillery nos indica (ver archivo para resultados completos)
+- El resultado de Artillery nos indica (ver archivo para resultados completos)
 
 ```
 
