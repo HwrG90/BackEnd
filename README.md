@@ -2,13 +2,11 @@
 
 *BackEnd*
 
-
 > This is a project for the course of BackEnd from the CoderHouse.
 
+# Conclusión
 
-# Conclusión 
-
-```fix
+```
 Benchmark con console Log
 
 $ npm run test
@@ -50,9 +48,10 @@ http.response_time:
   p99: ......................................................................... 85.6
 
   ```
+
 Sin console log
 
-```sh
+```
 
 $ npm run test
 
@@ -85,7 +84,7 @@ Req/Bytes counts sampled once per second.
 
 El resultado de Artillery nos indica (ver archivo para resultados completos)
 
-```sh
+```
 
 http.response_time:
   min: ......................................................................... 4
