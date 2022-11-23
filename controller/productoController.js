@@ -1,4 +1,4 @@
-const Productos = require(`../dao/ProductoDao`)
+const Productos = require(`../api/productoApi`)
 const ProductosMongoDB = new Productos();
 
 
