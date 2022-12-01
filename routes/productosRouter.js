@@ -1,12 +1,13 @@
 const express = require('express')
 const productosRouter = express.Router();
+const Token = require("../middlewares/token");
 const {
     getAllProducts,
     getProductById,
     addProduct,
     updateProductById,
     deleteProductById,
-} = require("../controller/productoController");
+} = require("../controller/productosController");
 
 /* ------------------------ ProductosRouter ------------------------- */
 
@@ -14,15 +15,15 @@ const {
 productosRouter.get(`/`, getAllProducts);
 
 // GET api/productos/:id
-productosRouter.get(`/:id`, getProductById);
+productosRouter.get(`/:id`,Token, getProductById);
 
 // POST api/productos
-productosRouter.post(`/`, addProduct);
+productosRouter.post(`/`,Token, addProduct);
 
 // PUT api/productos/:id
-productosRouter.put(`/:id`, updateProductById);
+productosRouter.put(`/:id`,Token, updateProductById);
 
 // DELETE /api/productos/:id
-productosRouter.delete(`/:id`, deleteProductById);
+productosRouter.delete(`/:id`,Token, deleteProductById);
 
 module.exports = productosRouter;
