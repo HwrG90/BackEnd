@@ -1,0 +1,4 @@
+[2022-12-10T21:44:51.305] [WARN] warnArchive - Estado: 404, Ruta consultada: /api/usuario/register, Metodo GET
+[2022-12-10T21:46:32.462] [WARN] warnArchive - Estado: 404, Ruta consultada: /api/usuario/register, Metodo GET
+[2022-12-10T21:49:50.118] [WARN] warnArchive - Estado: 404, Ruta consultada: /api/usuario/user, Metodo POST
+[2022-12-10T21:49:55.342] [WARN] warnArchive - Estado: 404, Ruta consultada: /api/usuario/user, Metodo POST
