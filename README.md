@@ -11,8 +11,6 @@ src
     ├── api.test.js
 ````
 
-````
- npm run test
-````
+## ` npm run test `
 
 ![img](Img.png)
