@@ -12,6 +12,7 @@ const carritoRouter = require('./routes/carritoRouter');
 const usuarioRouter = require('./routes/usuarioRouter')
 const otherRouter = require('./routes/otherRouter')
 
+
 const log4js = require('./utils/log');
 const loggerConsole = log4js.getLogger('default');
 const loggerArchiveWarn = log4js.getLogger('warnArchive');
@@ -41,7 +42,9 @@ app.use(session({
 app.use(`/api/productos`, productosRouter);
 app.use(`/api/carrito`, carritoRouter);
 app.use('/api/usuario', usuarioRouter)
-app.use('/api/test', otherRouter);
+app.use('/api/other', otherRouter);
+
+
 
 app.use((req, res, next) => {
     loggerConsole.warn(`
@@ -60,3 +63,5 @@ const server = app.listen(PORT, () => {
     })
 
 server.on('error', (err) => loggerArchiveError.error(err))
+
+module.exports = app;

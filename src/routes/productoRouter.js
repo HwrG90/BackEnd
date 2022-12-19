@@ -18,7 +18,7 @@ productosRouter.get(`/`, getAllProducts);
 productosRouter.get(`/:id`, getProductById);
 
 // POST api/productos
-productosRouter.post(`/`,Token, addProduct);
+productosRouter.post(`/`, addProduct);
 
 // PUT api/productos/:id
 productosRouter.put(`/:id`,Token, updateProductById);

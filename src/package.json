@@ -1,11 +1,14 @@
 {
   "name": "desafio-back-end",
   "version": "1.0.0",
-  "description": "Desafio BackEnd, Todo es por via POSTMAN <br>\r Se Necesita un Token Para acceder algunas Rutas <br>\r El Token se genera Luego de Iniciar sesion <br>\r Si deseo Hacer una orden de compra Necesita hacer un login para obtener su token",
+  "description": "",
   "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
   "scripts": {
-    "dev": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "test": "mocha test/api.test.js"
   },
   "repository": {
     "type": "git",
@@ -21,8 +24,11 @@
   },
   "homepage": "https://github.com/HwrG90/BackEnd#readme",
   "dependencies": {
+    "assert": "^2.0.0",
     "autocannon": "^7.10.0",
+    "axios": "^0.27.2",
     "bcrypt": "^5.0.1",
+    "chai": "^4.3.6",
     "cluster": "^0.7.7",
     "compression": "^1.7.4",
     "connect-mongo": "^4.6.0",
@@ -42,6 +48,7 @@
     "knex": "^1.0.1",
     "log4js": "^6.7.0",
     "minimist": "^1.2.7",
+    "mocha": "^10.2.0",
     "mongoose": "^6.6.2",
     "multer": "^1.4.5-lts.1",
     "mysql": "^2.18.1",
@@ -61,6 +68,7 @@
     "eslint": "^8.26.0",
     "moment": "^2.29.4",
     "morgan": "^1.10.0",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "supertest": "^6.3.3"
   }
 }

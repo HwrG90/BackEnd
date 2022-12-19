@@ -21,9 +21,9 @@ const addProduct = async (req, res) => {
             precio: price,
             stock: stock
         };
-        const id = await productsStorage.save(newProducto);
+        const product = await productsStorage.save(newProducto);
 
-        return res.json(`Se agregó el nuevo producto`);
+        return res.status(201).json(product);
     } catch (err) {
         return res.status(404).json({
             error: `Error al crear un producto ${err}`
