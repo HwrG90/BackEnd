@@ -13,4 +13,4 @@ src
 
 ## ` npm run test `
 
-![img](Img.png)
+![png](Img.png)
