@@ -1,28 +1,25 @@
-const express = require('express');
-const app = express();
+const express = require(`express`);
 const cors = require("cors");
 const session = require('express-session');
 const MongoStore = require(`connect-mongo`);
-require('dotenv').config()
-const PORT = process.env.PORT ||8080;
-
-//Router Import
-const productosRouter = require('./routes/productoRouter');
-const carritoRouter = require('./routes/carritoRouter');
-const usuarioRouter = require('./routes/usuarioRouter')
-const otherRouter = require('./routes/otherRouter')
-
-
+const app = express();
 const log4js = require('./utils/log');
-const loggerConsole = log4js.getLogger('default');
-const loggerArchiveWarn = log4js.getLogger('warnArchive');
-const loggerArchiveError = log4js.getLogger(`errorArchive`);
-
+require('dotenv').config()
+const { graphqlHTTP } = require(`express-graphql`);
+const graphQLSchema = require(`./graphql/schema`);
+const graphQLRootValue = require(`./graphql/controRoot`);
+const PORT = process.env.PORT ||8080;
 
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
+
+app.use(`/graphql`, graphqlHTTP({
+    schema: graphQLSchema,
+    rootValue: graphQLRootValue(),
+    graphiql: true
+}))
 
 app.use(session({
     store: MongoStore.create({
@@ -38,13 +35,21 @@ app.use(session({
     cookie: { maxAge: 600000 }
 }));
 
+//Router Import
+const productosRouter = require('./routes/productoRouter');
+const carritoRouter = require('./routes/carritoRouter');
+const usuarioRouter = require('./routes/usuarioRouter')
+const otherRouter = require('./routes/otherRouter')
+
+
+const loggerConsole = log4js.getLogger('default');
+const loggerArchiveWarn = log4js.getLogger('warnArchive');
+const loggerArchiveError = log4js.getLogger(`errorArchive`);
 
 app.use(`/api/productos`, productosRouter);
 app.use(`/api/carrito`, carritoRouter);
 app.use('/api/usuario', usuarioRouter)
 app.use('/api/other', otherRouter);
-
-
 
 app.use((req, res, next) => {
     loggerConsole.warn(`
@@ -63,5 +68,3 @@ const server = app.listen(PORT, () => {
     })
 
 server.on('error', (err) => loggerArchiveError.error(err))
-
-module.exports = app;
