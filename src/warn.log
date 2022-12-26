@@ -1,6 +1,0 @@
-[2022-12-18T18:22:13.635] [WARN] warnArchive - Estado: 404, Ruta consultada: /favicon.ico, Metodo GET
-[2022-12-18T18:31:05.987] [WARN] warnArchive - Estado: 404, Ruta consultada: /, Metodo GET
-[2022-12-18T18:31:43.649] [WARN] warnArchive - Estado: 404, Ruta consultada: /test, Metodo GET
-[2022-12-18T18:39:17.886] [WARN] warnArchive - Estado: 404, Ruta consultada: /, Metodo GET
-[2022-12-18T18:39:54.762] [WARN] warnArchive - Estado: 404, Ruta consultada: /, Metodo GET
-[2022-12-18T18:41:04.781] [WARN] warnArchive - Estado: 404, Ruta consultada: /info, Metodo GET
