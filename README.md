@@ -6,43 +6,27 @@
 
 ---
 
-# Para acceder a GraphiQL ingresa a
+# Desafio Framework Salis
 
-## ` (http://localhost:8080/graphql) `
 
-## Comandos
 
-````
-query getProducts{
-getAllProducts{
-    id
-    nombre
-    stock
-    }
-}
+# Rutas (POSTMAN)
 
-query getProductByID{
-    getProductById (id:"6338beb822de3760a5894afa"){
-    nombre
-    stock
-    }
-}
+- Listar Peliculas
+  #### http://localhost:1337/peliculas - GET
 
-mutation updateProduct{
-    updateProductById(id:"6338beb822de3760a5894afa", data:{
-        nombre: "producto graphql",
-        descripcion: "modificado graphql",
-        codigo: 50,
-        thumbnail: "URL graphql",
-        precio: 99,
-        stock: 99
-        }){
-    nombre
-    id
-    }
-}
+- Agregar una pelicula
 
-mutation deleteProduct{
-    deleteProductById(id:"6338beb822de3760a5894afa")
-}
-````
+  #### http://localhost:1337/peliculas - POST
+
+- Seleccionar una pelicula en especifico
+
+  #### http://localhost:1337/peliculas/find/ID (Ingrese el id de la pelicula) - GET
+
+- Editar una pelicula
+
+   #### http://localhost:1337/peliculas/ID (Ingrese el id de la pelicula) - PUT
+
+- Eliminar una pelicula
+
+   #### http://localhost:1337/peliculas/ID (Ingrese el id de la pelicula) - DELETE
